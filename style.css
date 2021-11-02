@@ -1,0 +1,129 @@
+:root {
+  --bg-light: #eee;
+  --m-font: "Zen Maru Gothic", sans-serif;
+  --f-color-light: #334455;
+  --f-color-lighest: #556677;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: var(--m-font);
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid lightgray;
+}
+
+nav div {
+  min-width: 80%;
+}
+
+nav div h3 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: var(--f-color-light);
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  pointer-events: none;
+}
+
+section .container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+section .container h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 4rem;
+}
+
+section .container h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1.8rem;
+  color: #8d959d;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.icons {
+  margin: 2rem 0.7rem;
+}
+
+svg {
+  stroke: var(--f-color-light);
+}
+
+svg:hover {
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  stroke: var(--f-color-light);
+}
+
+@media only screen and (max-width: 600px) {
+  section .container {
+    width: 80%;
+  }
+  section .container h1 {
+    font-size: 3rem;
+  }
+  section .container h2 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
